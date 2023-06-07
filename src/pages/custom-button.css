@@ -1,0 +1,47 @@
+.rotate .leaflet-container {
+  overflow: hidden;
+  animation: spin 4s linear forwards;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.customButton {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.animation {
+  background: #000;
+  animation: borderPulse 1.5s infinite;
+}
+
+@keyframes borderPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+  }
+
+  70% {
+    box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}
